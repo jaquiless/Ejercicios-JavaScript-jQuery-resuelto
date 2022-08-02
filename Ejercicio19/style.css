@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+
+#container {
+  display: flex;
+  flex-flow: wrap;
+}
+#interruptor {
+  align-items: center;
+}
+
+#bZoom,
+#bLlum {
+  background-color: red;
+  color: white;
+}

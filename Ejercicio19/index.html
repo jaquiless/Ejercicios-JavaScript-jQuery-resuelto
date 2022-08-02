@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Ejercicio19/style.css" />
+    <script src="/Ejercicio19/main.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="interruptor">
+        <img src="/Ejercicio19/img/boff.jpg" onclick="bombilla()" />
+      </div>
+      <div id="faders">
+        <input
+          type="range"
+          min="1"
+          max="7"
+          value="7"
+          id="faderZoom"
+          name="faderZoom"
+          step="1"
+          oninput="outputUpdate('#bZoom',value)"
+        />
+        <output for="faderZoom" id="bZoom">Light Bulb ZOOM 7</output>
+        <br />
+        <input
+          type="range"
+          min="1"
+          max="7"
+          value="7"
+          id="faderLlum"
+          name="faderLlum"
+          step="1"
+          oninput="outputUpdate('#bLlum',value)"
+        />
+        <output for="faderLlum" id="bLlum">Light level 7</output>
+      </div>
+    </div>
+    <div id="bombilla">
+      <img src="/Ejercicio19/img/off.jpg" id="bulb" width="420" />
+    </div>
+  </body>
+</html>
